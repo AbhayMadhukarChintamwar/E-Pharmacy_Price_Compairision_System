@@ -42,7 +42,7 @@ st.divider()
 c1,c2 = st.columns(2)
 with c1:
    
-    c1.image("App_Logo.png",width = 200)
+    c1.image("images/App_Logo.png",width = 200)
    
     
 with c2:
