@@ -1,8 +1,7 @@
-import serpapi 
+from serpapi import GoogleSearch
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-from PIL import Image
 
 
 
@@ -13,8 +12,8 @@ def Compare(med_name):
     "api_key": "4f5438def2f6d1aa1bcdd256cc72f1ea2909323f4c8aa00999a350c9d7607bcf",
     'gl':'in'
     }
-    search = serpapi.search(params)
-    results =search.as_dict()
+    search = GoogleSearch(params)
+    results =search.get_dict()
     shopping_results = results["shopping_results"]
     return shopping_results
 
@@ -26,9 +25,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# Load thumbnail/logo image
 
-# Header
 st.markdown("""
 <style>
 .stApp {
