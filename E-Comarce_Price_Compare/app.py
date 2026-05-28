@@ -39,14 +39,6 @@ st.title("🏥 E-Pharmacy Price Comparison System")
 st.write("Compare medicine prices from different platforms")
 st.divider()
 
-c1,c2 = st.columns(2)
-with c1:
-   
-    c1.image("images/App_Logo.png",width = 200)
-   
-    
-with c2:
-        c2.header('E-Pharmacy Price Comparison System')
 
 
 # <-------------------------------------------------------------------------->
